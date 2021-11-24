@@ -4,6 +4,12 @@
 
 Este tutorial se encuentra bajo desarrollo y puede cambiar en cualquier momento.
 
+### Pre-Requisitos
+### Provision the OpenShift hardware
+### Deploy Cloud Pak for Data 3.5 (CP4D) vía IBM Catalog
+### Update: Catalog method is no longer available in IBM Cloud. Deploy the lite assembly manually.
+
+
 ## Pre-Requisitos
 
 Los prerequisitos para la implementación de Maximo Application Suite son:
@@ -22,15 +28,21 @@ Install CLIs for IBM Cloud CLI, Helm and Openshift. Open and terminal window and
 
 1. IBM Cloud CLI
 
+```txt
 curl -sL https://ibm.biz/idt-installer | bash
+```
 
 2. Helm Command line Tool
 
+```txt
 curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 && chmod 700 get_helm.sh && bash ./get_helm.sh
+```
 
 3. OpenShift Command line Tool
 
+```txt
 curl -sLo /tmp/oc.tar.gz https://mirror.openshift.com/pub/openshift-v4/x86_64/clients/oc/4.6/linux/oc.tar.gz && sudo tar xzvf /tmp/oc.tar.gz -C /usr/local/bin/ && rm -rf /tmp/oc.tar.gz
+```
 
 #### Validate Install CLIs
 
